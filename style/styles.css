@@ -447,18 +447,6 @@ body {
   color: var(--color-white);
 }
 
-/* .wrapper-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-direction: row;
-
-  height: 500px;
-
-  margin-top: 2rem;
-} */
-
 .container-projects{
   height: 100%;
   width: 100%;
@@ -608,95 +596,23 @@ body {
   opacity: .7;
 }
 
-/* Final do projetc */
-
-/*
-
-#contacts{
-  display: flex;
-  flex-direction: column;
-
-  height: 40vh;
-  width: 100%;
-
-  background: var(--color-black);
-
-  color: var(--color-white)
-}
-
-.contact-icon-content h2 {
-  margin: 3rem 3rem 3rem 0rem;
-  padding: 1rem 1rem 1rem 0rem;
-
-  font-size: 3rem;
-  color: var(--color-white);
-}
-
-.contact-icons-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact-icon-content{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  margin: 0rem 3rem;
-  padding: 1rem;
-}
-
-.contact-icon{
-  height: 40px;
-  width: 40px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-right: 2rem;
-
-  background: var(--color-white);
-  padding: 1rem;
-  border-radius: 50%;
-}
-
-.contact-icon i {
-  font-size: 2rem;
-  color: var(--color-blue);
-}
-
-.contact-info span {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.contact-info p {
-  margin: .25rem 0rem;
-}
-
-.contact-info a {
-  display: block;
-  margin: .25rem 0rem;
-
-  text-decoration: none;
-  color: var(--color-white);
-}
-
-.contact-info a:hover{
-  transition: color .3s ease;
-  color: var(--color-blue);
-}
-*/
 
 #form{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0px 30px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  
   background: var(--color-black);
+  font-family: 'Poppins', sans-serif;
+  
 }
 .field {
   margin-bottom: 0px;
   background: var(--color-black);
-
 }
 
 .field label {
@@ -710,18 +626,39 @@ body {
   display: block;
   min-width: 250px;
   line-height: 1;
-  font-size: 23px;
+  font-size: 35px;
   border-radius: 8px;
 }
+.contact{
+  background: var(--color-black);
+  display: flex;
 
+}
+.ctas{
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: var(--color-white);
+  background: var(--color-black);
+}
 input[type="submit"] {
-  display: block;
-    padding: 7px 30px;
-    font-size: 17px;
-    background: var(--color-purple);
-    color: #fff;
-    border-radius: 7px;
+      display: inline-block;
+      max-width: 190px;
+      margin: 3rem 15rem;
+      padding: 10px;
+      margin-bottom: 3rem;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--color-black);
+      background: var(--color-purple);
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      cursor: pointer;  
   }
+  
 
 #footer {
   height: 15vh;

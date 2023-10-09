@@ -629,15 +629,20 @@ body {
   font-size: 35px;
   border-radius: 8px;
 }
+
+#contacts{
+background: var(--color-black);
+}
 .contact{
   background: var(--color-black);
   display: flex;
 
 }
 .ctas{
-  padding: 1rem;
+  padding: 4rem;
+  margin: 0rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--color-white);
   background: var(--color-black);
 }

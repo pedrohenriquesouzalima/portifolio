@@ -1,66 +1,170 @@
-/* Estilos responsivos para telas pequenas (até 600px) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ================================
+   ESTILOS RESPONSIVOS ATÉ 600PX
+================================= */
 @media (max-width: 600px) {
 
-    /* Reduz o espaçamento geral do container */
-    .container {
-      padding: 12px;
-    }
-  
-    /* Blocos principais com espaçamento e alinhamento centralizado */
-    .header, .content, .footer {
-      padding: 16px;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-  
-    /* Ajustes de fontes para melhor leitura em telas pequenas */
-    .header {
-      font-size: 1.2em;
-    }
-  
-    .content {
-      font-size: 1em;
-    }
-  
-    .footer {
-      font-size: 0.9em;
-    }
-  
-    /* Ajuste de elemento de fundo decorativo */
-    .person-background::after {
-      width: 100%;
-      height: 70%;
-    }
-  
-    /* Botões da seção de projetos (dispostos em coluna) */
-    .cta-project {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 10 auto 15px auto;
-      gap: 10px;
-      width: 144px;
-    }
-  
-    /* Estilo dos botões com tamanho reduzido e cor padrão do projeto */
-    .cta-project a {
-      display: inline-block;
-      width: 100%;
-      max-width: 240px;
-      padding: 8px;
-      font-size: 0.9em;
-      text-align: center;
-      background-color: #5f01ac; /* Cor roxa original */
-      color: white; /* Cor do texto nos botões */
-      border: 1px solid transparent;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background-color 0.3s ease, opacity 0.3s ease;
-    }
-  
-    /* Efeito de hover para os botões */
-    .cta-project a:hover {
-      opacity: 0.7;
-    }
+  /* Container com padding reduzido */
+  .container {
+    padding: 12px;
   }
-  
+
+  /* Seções principais com alinhamento central e espaçamento */
+  .header,
+  .content,
+  .footer {
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* Tamanhos de fonte para cada bloco */
+  .header {
+    font-size: 1.2em;
+  }
+
+  .content {
+    font-size: 1em;
+  }
+
+  .footer {
+    font-size: 0.9em;
+  }
+
+  /* Ajuste visual no fundo decorativo */
+  .person-background::after {
+    width: 100%;
+    height: 70%;
+  }
+
+  /* Botões da seção de projetos em coluna */
+  .cta-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 15px auto;
+    gap: 10px;
+    width: 144px;
+  }
+
+  /* Estilo dos botões */
+  .cta-project a {
+    display: inline-block;
+    width: 100%;
+    max-width: 240px;
+    padding: 8px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: #5f01ac; /* Roxo original */
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Efeito hover */
+  .cta-project a:hover {
+    opacity: 0.7;
+  }
+}
+
+
+/* ================================
+   ESTILOS RESPONSIVOS ATÉ 425PX
+================================= */
+@media (max-width: 425px) {
+
+  /* Container ajustado para layout em coluna */
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  /* Conteúdo principal da pessoa */
+  .person-content {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-black);
+    flex-wrap: wrap;
+  }
+
+  /* Fundo da pessoa com imagem */
+  .person-background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Lista de tecnologias usadas */
+  .stacks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Título das stacks */
+  .stacks-content h3 {
+    font-size: 1rem;
+    margin-left: 0;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  /* Seção "Sobre mim" */
+  .box-about {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Título da seção de projetos */
+  .projects-title h2 {
+    margin: 6rem;
+    padding: 7rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Botões dos projetos */
+  .cta-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+    width: 120px;
+  }
+
+  /* Formulário de contato */
+  #form {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: var(--color-black);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Campo de input do formulário */
+  .field input {
+    font-size: 18px;
+  }
+}

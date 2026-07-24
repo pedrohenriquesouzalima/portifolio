@@ -5,24 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Links externos de CSS e Fontes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <!-- Seus estilos locais (TAG CORRIGIDA) -->
   <link rel="stylesheet" href="/style/styles.css">
 
   <title>Pedro Henrique | Desenvolvedor Front-End | Portfólio Profissional</title>
 
-  <!-- 
-    TECH LEAD NOTE: Bloco temporário de compatibilidade! 
-    Como consertamos o aninhamento inválido (tags <p> dentro de <h2>, <h3>, <h4>), 
-    o seu CSS atual pararia de estilizar esses elementos.
-    Passe essas regras para o seu arquivo styles.css (trocando 'p' por 'span') 
-    e depois delete esta tag <style>.
-  -->
   <style>
     .section-subtitle h2 span.block-text { display: inline-block; font-size: 3rem; }
     .section-subtitle h2 span.block-text:nth-child(2) span { padding: 3px 5px; border-radius: 4px; color: var(--color-black); background: var(--color-white); }
@@ -33,7 +23,6 @@
 </head>
 
 <body>
-  <!-- Cabeçalho (Alterado de <section> para <header> semântico) -->
   <header id="header">
     <a class="header-title" href="#person">
       <h1>Pedro Henrique</h1>
@@ -49,9 +38,7 @@
     </nav>
   </header>
 
-  <!-- Conteúdo Principal envolto na tag <main> (Acessibilidade) -->
   <main>
-    <!-- Seção Principal -->
     <section id="person">
       <div class="person-content">
         <div class="person-name">
@@ -63,32 +50,11 @@
         <div class="stacks-content">
           <h3>Techs:</h3>
           <div class="stacks">
-            <!-- Dica futura: Pode agrupar tudo em uma única <ul> -->
-            <ul>
-              <li>
-                <div data="HTML"><img src="../img-svg/html.svg" alt="Ícone do HTML5"></div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <div data="CSS"><img src="../img-svg/css.svg" alt="Ícone do CSS3"></div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <div data="JS"><img src="../img-svg/js.svg" alt="Ícone do JavaScript"></div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <div data="REACT"><img src="../img-svg/react.svg" alt="Ícone do React"></div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <div data="TJ"><img src="../img-svg/typescript.svg" alt="Ícone do TypeScript"></div>
-              </li>
-            </ul>
+            <ul><li><div data="HTML"><img src="../img-svg/html.svg" alt="Ícone do HTML5"></div></li></ul>
+            <ul><li><div data="CSS"><img src="../img-svg/css.svg" alt="Ícone do CSS3"></div></li></ul>
+            <ul><li><div data="JS"><img src="../img-svg/js.svg" alt="Ícone do JavaScript"></div></li></ul>
+            <ul><li><div data="REACT"><img src="../img-svg/react.svg" alt="Ícone do React"></div></li></ul>
+            <ul><li><div data="TJ"><img src="../img-svg/typescript.svg" alt="Ícone do TypeScript"></div></li></ul>
           </div>
         </div>
       </div>
@@ -97,7 +63,6 @@
         <div class="wrapper-profile-photo">
           <img class="profile-photo" src="../imagens/foto-pedro.png" alt="Foto de perfil de Pedro Henrique">
         </div>
-
         <div class="links">
           <a href="https://github.com/pedrohenriquesouzalima" target="_blank" rel="noopener noreferrer" aria-label="Acessar GitHub de Pedro Henrique">
             <img src="../img-svg/logo-github.svg" alt="Ícone do GitHub">
@@ -109,11 +74,9 @@
       </div>
     </section>
 
-    <!-- Seção Sobre -->
     <section id="about">
       <div class="background-about">
         <div class="img-wrapper">
-          <!-- IMPORTANTE: Adicionado um 'alt' para acessibilidade -->
           <img src="../imagens/img.2.jpg" alt="Imagem de notebook com código aberto exibindo um projeto">
         </div>
       </div>
@@ -121,136 +84,103 @@
       <div class="box-about">
         <div class="section-subtitle">
           <h2>
-            <!-- Corrigido: <p> não pode ficar dentro de <h2>. Substituído por <span> -->
             <span class="block-text"></span>
             <span class="block-text">
               <span>Desenvolvedor</span> Front-End focado em interfaces modernas e responsivas
             </span>
           </h2>
         </div>
-
         <h3>
           Sou Desenvolvedor Front-End, com experiências em
           <span class="highlight-pink">HTML, CSS, Flexbox, JavaScript, React.Js e TypeScript</span>
         </h3>
-
         <h4>
           Olá! Sou o Pedro Henrique, desenvolvedor Front-End com foco em ReactJS, JavaScript, TypeScript, HTML5 e CSS3<br><br>
           Tenho experiência na construção de interfaces responsivas, acessíveis e com boa experiência do usuário, aplicando boas práticas de organização de código e atenção aos detalhes.<br><br>
           Atualmente busco minha primeira oportunidade profissional na área, onde eu possa contribuir com soluções funcionais, aprender com o time e evoluir constantemente como desenvolvedor.
         </h4>
-
         <h4>
           Disponibilizo abaixo meu <span class="highlight-blue">currículo</span> com mais detalhes sobre minha formação e projetos.
         </h4>
-
         <div class="button-cta">
-          <a href="../curriculo/curriculo_2025_pedro.pdf" download="CV- Pedro Henrique" aria-label="Baixar currículo de Pedro Henrique">
-            Currículo
-          </a>
+          <a href="../curriculo/curriculo_2025_pedro.pdf" download="CV- Pedro Henrique" aria-label="Baixar currículo de Pedro Henrique">Currículo</a>
         </div>
       </div>
     </section>
 
-    <!-- Seção Projetos -->
     <section id="projects">
       <div class="projects-title">
         <h2>PROJETOS 🧩</h2>
       </div>
 
       <div class="container-projects">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-
-            <!-- Card 1 -->
-            <div class="swiper-slide card-project">
-              <div class="image-project">
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-senha/index001.html" target="_blank" rel="noopener noreferrer">
-                  <img src="../imagens/img-gds.png" alt="Captura de tela do projeto Gerador de Senha">
-                </a>
-              </div>
-              <span>Gerador de senha.</span>
-              <p>Aplicação web que gera senhas aleatórias com base em critérios definidos pelo usuário, utilizando JavaScript para lógica, manipulação do DOM e validação de dados.</p>
-              <div class="cta-project">
-                <a href="https://github.com/pedrohenriquesouzalima/projeto-gerador-de-senha" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-senha/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="swiper-slide card-project">
-              <div class="image-project">
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-editor-de-texto/index001.html" target="_blank" rel="noopener noreferrer">
-                  <img src="../imagens/img-edt.png" alt="Captura de tela do projeto Editor de Texto">
-                </a>
-              </div>
-              <span>Editor de texto.</span>
-              <p>Editor de texto desenvolvido em JavaScript que permite formatação básica de conteúdo, utilizando manipulação do DOM e eventos para interação em tempo real.</p>
-              <div class="cta-project">
-                <a href="https://github.com/pedrohenriquesouzalima/projeto-editor-de-texto" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-editor-de-texto/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="swiper-slide card-project">
-              <div class="image-project">
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-detector-de-bateria/index.html" target="_blank" rel="noopener noreferrer">
-                  <img src="../imagens/img-ddb.png" alt="Captura de tela do projeto Detector de Bateria">
-                </a>
-              </div>
-              <span>Detector de Bateria.</span>
-              <p>Esse projeto detecta a porcentagem da sua bateria e informa se o dispositivo está ou não carregando no momento.</p>
-              <div class="cta-project">
-                <a href="https://github.com/pedrohenriquesouzalima/projeto-detector-de-bateria" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-detector-de-bateria/index.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="swiper-slide card-project">
-              <div class="image-project">
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-pixel-art/index001.html" target="_blank" rel="noopener noreferrer">
-                  <img src="../imagens/img-gpa.png" alt="Captura de tela do projeto Gerador de Pixel Art">
-                </a>
-              </div>
-              <span>Gerador de pixel.</span>
-              <p>Esse projeto gera pixels a partir de especificações adicionadas e permite que o usuário faça desenhos e os pinte.</p>
-              <div class="cta-project">
-                <a href="https://github.com/pedrohenriquesouzalima/projeto-pixel-art" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-pixel-art/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="swiper-slide card-project">
-              <div class="image-project">
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-sombra/index001.html" target="_blank" rel="noopener noreferrer">
-                  <img src="../imagens/img-gdsbr.png" alt="Captura de tela do projeto Gerador de Sombras">
-                </a>
-              </div>
-              <span>Gerador de sombras</span>
-              <p>Esse projeto gera sombras CSS (box-shadow) a partir das especificações adicionadas e exibe o código para copiar.</p>
-              <div class="cta-project">
-                <a href="https://github.com/pedrohenriquesouzalima/projeto-gerador-de-sombra" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
-                <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-sombra/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-
+        
+        <article class="card-ancora">
+          <div class="ancora-header">
+            <span class="badge-destaque">⭐ Projeto Principal</span>
           </div>
+          <div class="ancora-content">
+            <div class="image-project">
+              <a href="https://pedrohenriquesouzalima.github.io/projeto-canil/" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/img-canil.png" alt="Captura de tela do projeto CanilControl">
+              </a>
+                <div style="background: var(--color-black); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.2rem; text-align:center; padding:1rem; flex-direction:column; gap:0.5rem;">
+                  <i class="fa-solid fa-dog" style="font-size: 3rem; color: var(--color-pink);"></i>
+                  CanilControl MVP
+                </div>
+              </a>
+            </div>
+            <div class="ancora-text">
+              <span class="titulo-ancora">CanilControl</span>
+              <div class="techs-ancora">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Vite</span>
+              </div>
+              <p>Sistema completo de gestão para canis. Implementa regras de negócio biológicas, gestão de ocupação de baias, alertas sanitários e persistência de dados local.</p>
+              <div class="cta-project">
+                <a href="https://github.com/pedrohenriquesouzalima/projeto-canil" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
+                <a href="https://pedrohenriquesouzalima.github.io/projeto-canil/" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-          <!-- Controles do Swiper -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+        <div class="projetos-grid">
+          <article class="card-project">
+            <div class="image-project">
+              <a href="https://pedrohenriquesouzalima.github.io/projeto-pixel-art/index001.html" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/img-gpa.png" alt="Captura de tela do projeto Gerador de Pixel Art">
+              </a>
+            </div>
+            <span>Gerador de Pixel Art</span>
+            <p>Esse projeto gera uma tela a partir de especificações adicionadas e permite que o usuário faça desenhos interativos.</p>
+            <div class="cta-project">
+              <a href="https://github.com/pedrohenriquesouzalima/projeto-pixel-art" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
+              <a href="https://pedrohenriquesouzalima.github.io/projeto-pixel-art/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+          <article class="card-project">
+            <div class="image-project">
+              <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-sombra/index001.html" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/img-gdsbr.png" alt="Captura de tela do projeto Gerador de Sombras">
+              </a>
+            </div>
+            <span>Gerador de Sombras</span>
+            <p>Esse projeto gera sombras CSS (box-shadow) a partir das especificações adicionadas e exibe o código para copiar.</p>
+            <div class="cta-project">
+              <a href="https://github.com/pedrohenriquesouzalima/projeto-gerador-de-sombra" target="_blank" rel="noopener noreferrer">Código <i class="fa-brands fa-github"></i></a>
+              <a href="https://pedrohenriquesouzalima.github.io/projeto-gerador-de-sombra/index001.html" target="_blank" rel="noopener noreferrer">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
         </div>
+
       </div>
     </section>
 
-    <!-- Seção Contatos -->
     <section id="contacts">
       <div class="ctas">
-        <!-- Substituído de <span> para <h2> por hierarquia de títulos -->
         <h2>CONTATO 📞</h2>
       </div>
       <div class="contact">
@@ -260,37 +190,29 @@
             <input type="text" name="from_name" id="from_name" required>
           </div>
           <div class="field">
-            <!-- Corrigido de input tipo text para textarea visando a usabilidade -->
             <label for="mensagem">Mensagem</label>
             <textarea name="mensagem" id="mensagem" rows="3" required></textarea>
           </div>
           <div class="field">
             <label for="reply_to">Email</label>
-            <!-- Corrigido type text para type email para validação nativa -->
             <input type="email" name="reply_to" id="reply_to" required>
           </div>
-
           <input class="button-cts" type="submit" id="button" value="Enviar Email">
         </form>
       </div>
     </section>
   </main>
 
-  <!-- O seu CSS (styles.css) referenciava um #footer que não existia no HTML. Criei um rodapé básico! -->
   <footer id="footer">
     <div class="container-footer">
       <p>Pedro Henrique Souza Lima.</p>
     </div>
   </footer>
 
-  <!-- Scripts (Movidos todos para o final e removida a importação duplicada) -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     emailjs.init('cPWUrU0WxJdtvAvB8')
   </script> 
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/js/scripts.js"></script>
-
 </body>
 </html>

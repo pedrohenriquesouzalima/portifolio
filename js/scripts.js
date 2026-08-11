@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
+      // Honeypot: campo invisível que só um bot preencheria. Se vier preenchido, descarta em silêncio.
+      const honeypot = form.querySelector('#website');
+      if (honeypot && honeypot.value.trim() !== '') {
+        form.reset();
+        return;
+      }
+
       // Guarda o texto original e bloqueia o botão para evitar duplos cliques
       const originalBtnText = btn.value;
       btn.value = 'Enviando...';

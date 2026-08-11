@@ -50,7 +50,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--color-black); color
 
 .person-background { display: flex; flex-direction: column; align-items: center; padding: 3rem 0; position: relative; z-index: 1; }
 .wrapper-profile-photo { padding: 10px; border-radius: 50%; width: 200px; background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0), radial-gradient(#000 68%, transparent 0), linear-gradient(to top right, #ffa500 0%, #ff1493 100%); }
-.profile-photo { width: 100%; border-radius: 50%; }
+.profile-photo { width: 100%; height: auto; border-radius: 50%; }
 .links { display: flex; gap: 2rem; margin-top: 2rem; }
 .links a img { width: 40px; transition: transform 0.3s; }
 .links a img:hover { transform: scale(1.15); }

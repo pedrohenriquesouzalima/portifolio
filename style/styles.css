@@ -9,11 +9,6 @@
   --color-blue: #073fcc;
   --color-black: #0c0c0c;
   --color-purple: #5f01ac;
-  --color-fundo1: #0C1370;
-  --color-fundo2: #636DF2; 
-  --color-fundo3: #1A29F0;
-  --color-fundo4: #2E3270;
-  --color-fundo5: #151FBC;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,14 +32,14 @@ body { font-family: 'Poppins', sans-serif; background: var(--color-black); color
 /* --- HERO SECTION --- */
 #person { display: flex; flex-direction: column; min-height: 100vh; padding-top: 10rem; }
 .person-content { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem; }
-.person-name h1 { font-size: 3.5rem; line-height: 4.5rem; color: transparent; position: relative; width: fit-content; margin: 0 auto; animation: written_text 0.5s ease forwards; }
-.person-name h1:nth-child(1) { animation-delay: 1s; }
-.person-name h1:nth-child(2) { animation-delay: 2s; }
-.person-name h1:nth-child(3) { animation: written_text_name 0.5s ease forwards; animation-delay: 3s; }
-.person-name h1 span { position: absolute; top: 0; left: 0; width: 0px; height: 100%; background: var(--color-pink); animation: written_text_box 1s ease; }
-.person-name h1:nth-child(1) span { animation-delay: 0.5s; }
-.person-name h1:nth-child(2) span { animation-delay: 1.5s; }
-.person-name h1:nth-child(3) span { animation-delay: 2.5s; }
+.person-name h2 { font-size: 3.5rem; line-height: 4.5rem; color: transparent; position: relative; width: fit-content; margin: 0 auto; animation: written_text 0.5s ease forwards; }
+.person-name h2:nth-child(1) { animation-delay: 1s; }
+.person-name h2:nth-child(2) { animation-delay: 2s; }
+.person-name h2:nth-child(3) { animation: written_text_name 0.5s ease forwards; animation-delay: 3s; }
+.person-name h2 span { position: absolute; top: 0; left: 0; width: 0px; height: 100%; background: var(--color-pink); animation: written_text_box 1s ease; }
+.person-name h2:nth-child(1) span { animation-delay: 0.5s; }
+.person-name h2:nth-child(2) span { animation-delay: 1.5s; }
+.person-name h2:nth-child(3) span { animation-delay: 2.5s; }
 
 .stacks ul { list-style: none; }
 .stacks-content { margin-top: 4rem; display: flex; flex-direction: column; align-items: center; }
@@ -110,6 +105,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--color-black); color
 .ctas h2 { font-size: 2.8rem; margin-bottom: 3rem; text-align: center; }
 #form { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 2rem; }
 .field label { font-size: 1.4rem; margin-bottom: 0.5rem; display: block; color: #ddd; }
+.field-honeypot { position: absolute; left: -9999px; top: -9999px; }
 .field input, .field textarea { width: 100%; padding: 1.2rem; font-size: 1.6rem; border-radius: 8px; border: none; outline: none; font-family: 'Poppins', sans-serif; }
 .field textarea { resize: vertical; }
 input[type="submit"] { background: var(--color-purple); color: var(--color-white); font-size: 1.6rem; font-weight: 700; padding: 1.5rem; border: none; border-radius: 8px; cursor: pointer; transition: opacity 0.3s; }
@@ -134,7 +130,7 @@ input[type="submit"]:hover { opacity: 0.8; }
   
   #person { flex-direction: row; padding-top: 0; }
   .person-content { width: 50%; justify-content: center; align-items: flex-start; text-align: left; padding: 0 5%; }
-  .person-name h1 { margin: 0; font-size: 4.5rem; line-height: 6rem; }
+  .person-name h2 { margin: 0; font-size: 4.5rem; line-height: 6rem; }
   .stacks-content { align-items: flex-start; }
   .person-background { width: 50%; justify-content: center; }
   .person-background::after { content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: linear-gradient(90deg, transparent 30%, var(--color-black)), linear-gradient(180deg, transparent 30%, var(--color-black)); opacity: 0.7; z-index: -1; }
@@ -165,3 +161,12 @@ input[type="submit"]:hover { opacity: 0.8; }
   #form { width: 600px; }
   .field input, .field textarea { font-size: 1.8rem; }
 }
+
+/* =======================================
+   5. AJUSTES FINOS (SOBRESCRITAS PONTUAIS)
+======================================= */
+.section-subtitle h2 span.block-text { display: inline-block; font-size: 3rem; }
+.section-subtitle h2 span.block-text:nth-child(2) span { padding: 3px 5px; border-radius: 4px; color: var(--color-black); background: var(--color-white); }
+.box-about h3 span.highlight-pink { display: inline-block; width: fit-content; padding: 2px 4px; border-radius: 4px; color: var(--color-black); background: var(--color-pink); }
+.box-about h4 span.highlight-blue { display: inline; padding: 2px 4px; color: var(--color-blue); font-weight: bold; font-size: 1.75rem; }
+.ctas h2 { padding: 4rem; margin: 0rem; font-size: 3.5rem; color: var(--color-white); background: var(--color-black); font-weight: normal; }
